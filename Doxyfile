@@ -1,0 +1,25 @@
+# Doxygen settings for the load balancer project.
+# Run "doxygen" in this folder; the website is created in docs/html.
+
+PROJECT_NAME           = "CSCE 412 Project 4: Load Balancer"
+PROJECT_BRIEF          = "C++ load balancer simulation with dynamic server scaling"
+OUTPUT_DIRECTORY       = docs
+
+INPUT                  = .
+FILE_PATTERNS          = *.h *.cpp *.md
+RECURSIVE              = NO
+EXCLUDE                = docs
+USE_MDFILE_AS_MAINPAGE = README.md
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+SOURCE_BROWSER         = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+GENERATE_LATEX         = NO
+
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = YES

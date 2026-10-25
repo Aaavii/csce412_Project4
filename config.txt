@@ -1,0 +1,25 @@
+# Load balancer settings (key=value). Lines starting with # are ignored.
+# servers and runTime are also asked for when the program starts.
+servers=20
+runTime=100000
+
+# Range of cycles a request takes to process
+minTaskTime=2
+maxTaskTime=20
+
+# Percent chance (0-100) that a new request arrives each cycle
+arrivalChance=50
+
+# Keep the queue between minThreshold and maxThreshold requests per server
+minThreshold=50
+maxThreshold=80
+
+# Cycles to wait after adding/removing a server before checking again
+cooldown=20
+
+# true = print events as they happen, false = summaries only
+verbose=true
+
+# Blocked IP ranges (firewall). Add as many lines as you want.
+blocked=10.0.0.0-10.255.255.255
+blocked=200.0.0.0-210.255.255.255
