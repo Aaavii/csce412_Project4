@@ -181,9 +181,7 @@ void LoadBalancer::printSummary() {
     log("=============================================", Color::BLUE, true);
 }
 
-// =====================================================================
-//  Written by Avi: run() and checkScaling()
-// =====================================================================
+
 
 void LoadBalancer::run(int cycles) {
 
